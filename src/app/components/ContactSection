@@ -1,0 +1,11 @@
+import styles from "../styles/contactSection.module.css";
+
+const ContactSection = () => {
+  return (
+    <div>
+      ContactSection
+    </div>
+  )
+}
+
+export default ContactSection
