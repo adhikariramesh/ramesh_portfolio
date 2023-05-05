@@ -9,6 +9,9 @@ li{
 }
 
 p{
+    display: flex;
+    align-items: center;
+    padding: 4px;
     font-size: 16px;
     color: rgb(43, 41, 41);
 }
@@ -33,13 +36,45 @@ p{
     align-items: center;
     justify-content: center;
     gap: 25px;
-    background-color: gray;
+    background-color: rgb(13, 174, 131);
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px rgb(69, 60, 60);
+    transition: all 1s ease;
 }
-
 .nav-links{
     color: white;
-    font-size: 16px;
+    font-size: 20px;
     text-decoration: none;
     padding: 10px 16px;
     text-transform:capitalize;
+}
+.nav-links:hover,
+.nav-links:focus{
+    background: linear-gradient(rgba(218, 37, 13, 0.755),rgb(3, 3, 106) , rgba(2, 2, 2, 0.5));
+    border-radius: 50%;
+}
+ 
+.menu{
+   display: none;
+}
+
+
+@media only  screen and (max-width:900px) {
+
+    .menu{
+        width: calc(100vw - 10rem);
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 10px 0;
+        font-size: 30px;
+    }
+    .main-nav{
+        height: 80vh;
+        flex-direction: column;
+        transform: translateX(110%);
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+    }
 }
