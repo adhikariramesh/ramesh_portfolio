@@ -10,9 +10,9 @@ const Header = () => {
     <header className={lora.className}>
       <div className="headers">
      <div className="topSection">
-        <p><IoIosCall/>+9779865295585</p>
-        <p><AiOutlineMail/>2021rameshprasad@gmail.com</p>
-        <p><AiOutlineWhatsApp/>+9779808463282</p>
+        <p><IoIosCall className="call"/>+9779865295585</p>
+        <p><AiOutlineMail className="email"/>2021rameshprasad@gmail.com</p>
+        <p><AiOutlineWhatsApp className="whatapp"/>+9779808463282</p>
      </div>
      <div className="bottomSection">
      <Nav/>

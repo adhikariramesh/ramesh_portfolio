@@ -1,9 +1,110 @@
-.heroSection{
+.main{
+    margin: 0;
+    padding: 0;
     width: 100vw;
-    height: 100vh;
-    background-color: forestgreen;
-    color: white;
+}
+.heroSection{
+    padding: 2rem 3rem;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: linear-gradient(0deg, rgba(238,238,238,1) 0%,  rgba(179,170,170,1) 100%);
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top:5rem;
+}
+.title{
+    display: inline-block;
+    font-size: 22px;
+    color: #e9dede;
+    padding: 10px 16px;
+    text-transform: uppercase;
+    position: relative;
+    -webkit-text-stroke: 0.08vw rgb(12, 26, 216);
+}
+.title::after{
+    content: "";
+    width: 0%;
+    height: 4px;
+    background: linear-gradient(90deg, rgba(208,207,221,1) 0%, rgba(0,0,159,1) 35%, rgba(255,158,0,1) 100%);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: sizeInDe 5s infinite  alternate-reverse;
+}
+@keyframes sizeInDe{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+.name{
+    width: 400px;
+    font-size: 25px;
+    padding: 0px 3rem;
+    color: #377464;
+    position: relative;
+    text-transform: capitalize;
+}
+.name::after{
+    content: "Ramesh Prasad Adhikari";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 3rem;
+    font-size: 25px;
+    color: rgb(113, 53, 172);
+    animation: sizeInDe 5s infinite  alternate-reverse;
+    overflow: hidden;
+}
+.position{
+    font-size: 16px;
+    color: rgb(74, 57, 57);
+    text-align: center;
+    padding: 3px 1rem;
+    text-transform: capitalize;
+}
+
+.right{
+    margin: 1rem 2rem;
+    position: relative;
+    background: linear-gradient(90deg, rgba(208,207,221,1) 0%, rgba(0,0,159,1) 35%, rgba(255,158,0,1) 100%);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.right:hover{
+    transform: rotateZ(360deg);
+}
+.right::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgb(30, 29, 29);
+}
+.right:hover::before{
+    background: none;
+    box-shadow: none;
+}
+.right img{
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;
 }
