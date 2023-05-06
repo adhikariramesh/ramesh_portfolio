@@ -1,0 +1,35 @@
+
+
+.mainsection{
+    width: 100vw;
+}
+.mainHead{
+    display: block;
+    font-size: 16px;
+    color: rgb(129, 123, 123);
+    margin: 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+.head{
+    display:block;
+    font-size: 22px;
+    color: rgb(106, 102, 102);
+    position: relative;
+    padding: 4px 10px;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0;
+}
+
+@media only screen and (max-width:900px) {
+    .mainHead{
+        color: rgb(33, 29, 29);
+    }
+
+    .para{
+        padding: 5px 20px;
+    }
+}
