@@ -71,3 +71,15 @@
       transform: translateX(10%);
    }
 }
+@media only screen and (max-width:400px) {
+   .skillSection{
+      padding: 10px;
+      /* background-color: red; */
+  }
+  .container{
+   padding: 20px;
+  }
+.container ul li{
+   font-size: 14px;
+}
+}

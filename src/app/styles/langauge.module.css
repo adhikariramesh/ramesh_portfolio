@@ -59,12 +59,25 @@
 }
 
 
-@media only screen and (max-width){
+@media only screen and (max-width:900px){
     .container{
         padding: 0 2rem;
     }
     .container ul li{
-        font-size: 6px;
-        padding: 0rem;
+        font-size: 16px;
+        padding: 20px;
+    }
+}
+@media only screen and (max-width:400px){
+    .langaugeSection{
+        height: 40vh;
+        margin: 0;
+    }
+    .container{
+        padding: 0 2rem;
+    }
+    .container ul li{
+        font-size: 8px;
+        padding: 10px;
     }
 }

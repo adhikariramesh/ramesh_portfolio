@@ -1,0 +1,54 @@
+.contactSection{
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container{
+    padding: 1rem 3rem;
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 2rem;
+}
+.titles{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    transform: translateY(3rem);
+}
+.inputField{
+    width: 100%;
+    padding: 10px 16px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    background: transparent;
+    color: white;
+    font-size: 14px;
+}
+.btn{
+    width: 100%;
+    padding: 10px 16px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 22px;
+    text-transform: capitalize;
+    background-color: rgb(27, 27, 25);
+    color: white;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(101, 96, 96);
+    
+}
